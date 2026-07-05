@@ -8,7 +8,7 @@ const Navbar = () => {
     storyRef,
     eventsRef,
     galleryRef,
-    rsvpRef,
+    // rsvpRef,
     locationRef,
     scrollTo,
   } = useScroll();
@@ -24,7 +24,7 @@ const Navbar = () => {
     { title: "Story", ref: storyRef },
     { title: "Events", ref: eventsRef },
     { title: "Gallery", ref: galleryRef },
-    { title: "RSVP", ref: rsvpRef },
+    // { title: "RSVP", ref: rsvpRef },
     { title: "Location", ref: locationRef },
   ];
 

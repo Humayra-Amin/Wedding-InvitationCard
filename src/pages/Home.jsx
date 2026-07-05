@@ -4,7 +4,7 @@ import BrideGroom from "../components/BrideGroom/BrideGroom";
 import LoveStory from "../components/LoveStory/LoveStory";
 import Events from "../components/Events/Events";
 import Gallery from "../components/Gallery/Gallery";
-import RSVP from "../components/RSVP/RSVP";
+// import RSVP from "../components/RSVP/RSVP";
 import Location from "../components/Location/Location";
 import SectionDivider from "../components/Common/SectionDivider";
 // import CoupleSection from "../components/CoupleSection";
@@ -39,9 +39,9 @@ function Home() {
 
       <Gallery />
 
-      <SectionDivider />
+      {/* <SectionDivider />
 
-      <RSVP />
+      <RSVP /> */}
 
       <SectionDivider />
 
