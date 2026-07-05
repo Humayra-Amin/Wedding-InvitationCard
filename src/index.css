@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#faf9f6;
+  color:#333;
+}
+
+.serif{
+  font-family:'Cormorant Garamond',serif;
+}
+
+.gold-text{
+  color:#b68d40;
+}
+
+.gold-bg{
+  background:#b68d40;
+}
+
+.hero-overlay{
+  background:linear-gradient(
+      rgba(255,255,255,.45),
+      rgba(255,255,255,.55)
+  );
+}
+
+.glass{
+  backdrop-filter:blur(12px);
+  background:rgba(255,255,255,.25);
+}
+
+.section-padding{
+  padding:80px 20px;
+}
