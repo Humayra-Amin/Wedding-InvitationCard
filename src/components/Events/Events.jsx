@@ -4,7 +4,7 @@ import LuxuryDecoration from "../Hero/LuxuryDecoration";
 import { useScroll } from "../../context/ScrollContext";
 
 const Events = () => {
-      const { eventsRef } = useScroll();
+  const { eventsRef } = useScroll();
 
   return (
     <section ref={eventsRef} className="bg-[#FFFDF8] py-28">
