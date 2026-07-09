@@ -42,7 +42,7 @@ const Events = () => {
 
           <EventCard
             icon="🎉"
-            title="Reception"
+            title="Walima Ceremony"
             date="Sunday • 19 December 2027"
             time="7:00 PM"
             venue="Grand Palace Hall"

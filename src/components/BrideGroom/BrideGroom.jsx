@@ -1,44 +1,61 @@
 import { motion } from "framer-motion";
 import PersonCard from "./PersonCard";
+import CoupleDivider from "./CoupleDivider";
 import LuxuryDecoration from "../Hero/LuxuryDecoration";
 
 const BrideGroom = () => {
   return (
-    <section className="bg-[#FFFDF8] py-28">
+    <section className="relative overflow-hidden bg-[#FFFDF8] py-32">
+
       <LuxuryDecoration />
-      <div className="mx-auto max-w-7xl px-6">
+
+      {/* Background Glow */}
+
+      <div className="absolute -left-44 top-20 h-[450px] w-[450px] rounded-full bg-[#D4AF37]/10 blur-[120px]" />
+
+      <div className="absolute -right-44 bottom-0 h-[450px] w-[450px] rounded-full bg-[#D4AF37]/10 blur-[120px]" />
+
+      <div className="relative mx-auto max-w-7xl px-6">
+
+        {/* Heading */}
 
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .8 }}
           viewport={{ once: true }}
+          transition={{ duration: .8 }}
           className="text-center"
         >
-          <p
-            className="uppercase tracking-[0.45em] text-sm"
-            style={{ color: "#C9A227" }}
-          >
-            Meet The Couple
+
+          <p className="uppercase tracking-[0.45em] text-[#C9A227]">
+            Together Forever
           </p>
 
-          <h2 className="mt-4 font-serif text-5xl text-[#2B2B35]">
+          <h2 className="mt-5 font-serif text-5xl text-[#2B2B35]">
             Bride & Groom
           </h2>
 
-          <div
-            className="mx-auto mt-5 h-[2px] w-40"
-            style={{
-              background:
-                "linear-gradient(to right,transparent,#C9A227,transparent)",
-            }}
-          />
+          <div className="mt-7 flex items-center justify-center gap-5">
+
+            <div className="h-px w-28 bg-gradient-to-r from-transparent to-[#D4AF37]" />
+
+            <span className="text-2xl text-[#D4AF37]">
+              ❦
+            </span>
+
+            <div className="h-px w-28 bg-gradient-to-l from-transparent to-[#D4AF37]" />
+
+          </div>
+
         </motion.div>
 
-        <div className="mt-20 grid gap-10 lg:grid-cols-2">
+        {/* Couple */}
+
+        <div className="mt-24 grid items-center gap-16 lg:grid-cols-[1fr_auto_1fr]">
 
           <PersonCard
-            image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800"
+            side="left"
+            image="https://i.ibb.co.com/m5tGJXhH/bride.jpg"
             title="The Bride"
             name="Emma Johnson"
             parents={`Daughter of
@@ -48,8 +65,11 @@ Mr. John Johnson
 Mrs. Sarah Johnson`}
           />
 
+          <CoupleDivider />
+
           <PersonCard
-            image="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800"
+            side="right"
+            image="https://i.ibb.co.com/PzT7xNwq/groom.jpg"
             title="The Groom"
             name="Daniel Smith"
             parents={`Son of
@@ -60,7 +80,9 @@ Mrs. Mary Smith`}
           />
 
         </div>
+
       </div>
+
     </section>
   );
 };
